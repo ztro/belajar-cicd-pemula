@@ -85,3 +85,22 @@ func main() {
 }
 # test
 This is a repo used for testing gitleaks
+GET /calendar/v1/events
+    Host​: api.example.com
+    
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2V4YW1wbGUuYXV0aDAuY29tLyIsImF1ZCI6Imh0dHBzOi8vYXBpLmV4YW1wbGUuY29tL2NhbGFuZGFyL3YxLyIsInN1YiI6InVzcl8xMjMiLCJpYXQiOjE0NTg3ODU3OTYsImV4cCI6MTQ1ODg3MjE5Nn0.CA7eaHjIHz5NxeIJoFK9krqaeZrPLwmMmgI_XiQiIkQ
+
+    {
+      "alg": "RS256",
+      "typ": "JWT"
+    }
+    .
+    {
+      "iss": "https://example.auth0.com/",
+      "aud": "https://api.example.com/calendar/v1/",
+      "sub": "usr_123",
+      "scope": "read write",
+      "iat": 1458785796,
+      "exp": 1458872196
+    }
+
